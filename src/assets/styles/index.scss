@@ -1,0 +1,25 @@
+@import 'fonts', 'variables', 'mixins';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-overflow-scrolling: touch;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+input, textarea, select, button  {
+  appearance: none;
+  font-family: inherit;
+}
